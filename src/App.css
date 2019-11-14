@@ -1,7 +1,34 @@
-.App {
-  text-align: center;
+.app-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'nav content content';
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /* grid-gap: 10px; */
 }
-ul li{
-  list-style: none;
-  color: gray;
+
+.header {
+  grid-area: header;
+  background: #02BA98;
+}
+
+.header img {
+  width: 74px;
+}
+
+.nav {
+  grid-area: nav;
+  background: #02BA98;
+}
+
+.content {
+  grid-area: content;
+  background: rgb(239, 245, 244);
+}
+
+.content img{
+  max-width: 1000px;
 }
