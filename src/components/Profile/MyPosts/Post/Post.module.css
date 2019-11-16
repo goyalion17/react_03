@@ -1,8 +1,14 @@
 .item{
-    color: orange;
+   padding: 10px;
   }
 
 .item img {
     width: 50px;
     border-radius: 50%;
+}
+
+span {
+  padding-top: 100px;
+  color: rgb(168, 35, 35); 
+  font-weight: bold;
 }
