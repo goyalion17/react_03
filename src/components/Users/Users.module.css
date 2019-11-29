@@ -3,3 +3,10 @@
     height: 50px;
     border-radius: 50%;
 }
+
+.selectedPage {
+    font-size: 120%;
+    color: rgb(212, 149, 30);
+    text-decoration: underline;
+    cursor: pointer;
+}
