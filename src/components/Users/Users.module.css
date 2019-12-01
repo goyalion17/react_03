@@ -5,8 +5,9 @@
 }
 
 .selectedPage {
-    font-size: 120%;
+    font-size: 110%;
     color: rgb(212, 149, 30);
     text-decoration: underline;
     cursor: pointer;
+    margin: 3px;
 }
