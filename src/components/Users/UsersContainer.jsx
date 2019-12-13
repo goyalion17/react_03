@@ -1,10 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { compose } from '../../../../../AppData/Local/Microsoft/TypeScript/3.6/node_modules/redux';
 import Preloader from '../common/Preloader/Preloader';
 import { follow, getUsers, setCurrentPage, toggleFollowingProgress, unfollow } from './../redux/users-reducer';
 import Users from './Users';
-import {withAuthRedirect} from './../../hoc/withAuthRedirect';
-import { compose } from '../../../../../AppData/Local/Microsoft/TypeScript/3.6/node_modules/redux';
 
 class UsersContainer extends React.Component {
     componentDidMount() {
@@ -33,7 +32,6 @@ class UsersContainer extends React.Component {
 }
 
 let mapStateToProps = (state) => {
-    
     return {
         users: state.usersPage.users,
         pageSize: state.usersPage.pageSize,
@@ -45,7 +43,6 @@ let mapStateToProps = (state) => {
 };
 
 export default compose(
-    withAuthRedirect,
     connect(mapStateToProps, {
     follow, unfollow, setCurrentPage,
     toggleFollowingProgress, getUsers })    
