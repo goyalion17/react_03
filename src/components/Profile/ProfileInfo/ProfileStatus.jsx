@@ -1,6 +1,4 @@
 import React from 'react';
-import s from './ProfileInfo.module.css';
-import { continueStatement } from '@babel/types';
 
 class ProfileStatus extends React.Component {
     state = {
