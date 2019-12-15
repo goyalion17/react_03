@@ -1,14 +1,15 @@
-import React, {Component} from 'react';
+import React from 'react';
+import { Field, reduxForm } from 'redux-form';
+import { maxLengthCreator, required } from './../../utils/validators/validators';
+import { Textarea } from './../common/FormsControls/FormsControls';
 import s from './MyPosts.module.css';
 import Post from './MyPosts/Post/Post';
-import {reduxForm, Field} from 'redux-form';
-import {required, maxLengthCreator} from './../../utils/validators/validators';
-import {Textarea} from './../common/FormsControls/FormsControls';
 
 const MyPosts = React.memo(props => {
-  console.log('Yo render');
-
-  let postsElements = props.posts.map ( p => <Post message={p.message} likesCount={p.likesCount} /> )
+  let postsElements =
+    [...props.posts]
+    .reverse()
+    .map ( p => <Post message={p.message} likesCount={p.likesCount} /> )
 
   let newPostElement = React.createRef();
 
