@@ -1,5 +1,4 @@
 import React from 'react';
-import { reduxForm } from 'redux-form';
 import AddMessageForm from './AddMessageForm';
 import DialogItem from './DialogItem/DialogItem';
 import s from './Dialogs.module.css';
