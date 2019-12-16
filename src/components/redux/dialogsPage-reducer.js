@@ -1,7 +1,6 @@
 const SEND_MESSAGE = 'SEND_MESSAGE';
 
-let initialState = {
-    
+let initialState = {    
     dialogsData: [
         {id: 1, name: 'Ирина'},
         {id: 2, name: 'Ваня'},
@@ -9,7 +8,6 @@ let initialState = {
         {id: 4, name: 'Максим'},
         {id: 5, name: 'Олег'}
     ],
-
 
     messagesData: [
         {id: 1, message: 'Hi'},

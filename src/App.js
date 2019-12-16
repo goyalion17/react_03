@@ -1,16 +1,16 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { Route, withRouter } from 'react-router-dom';
+import { compose } from 'redux';
 import './App.css';
+import Preloader from './components/common/Preloader/Preloader';
+import DialogsContainer from './components/Dialogs/DialogsContainer';
 import HeaderContainer from './components/Header/HeaderContainer';
+import LoginPage from './components/Login/Login';
 import Nav from './components/Nav/Nav';
 import ProfileContainer from './components/Profile/ProfileContainer';
-import DialogsContainer from './components/Dialogs/DialogsContainer';
-import {Route, withRouter} from 'react-router-dom';
-import UsersContainer from './components/Users/UsersContainer';
-import LoginPage from './components/Login/Login';
 import { initializeApp } from './components/redux/app-reducer';
-import { connect } from 'react-redux';
-import {compose} from 'redux';
-import Preloader from './components/common/Preloader/Preloader';
+import UsersContainer from './components/Users/UsersContainer';
 
 class App extends React.Component {
   componentDidMount(){
@@ -33,7 +33,7 @@ class App extends React.Component {
           </div>
         </div>
     );
-}
+  }
 }
 
 const mapStateToProps = (state) => ({
