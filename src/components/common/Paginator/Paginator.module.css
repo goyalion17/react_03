@@ -1,7 +1,17 @@
-.selectedPage {
+.paginator {
+    margin: 10px;
+}
+
+.pageNumber {
+    padding: 2px;
+    border: 1px solid gray;
+    color: black;
+}
+
+.pageNumber .selectedPage {
     font-size: 110%;
     color: rgb(212, 149, 30);
     text-decoration: underline;
     cursor: pointer;
-    margin: 3px;
+    margin: 3px;   
 }
