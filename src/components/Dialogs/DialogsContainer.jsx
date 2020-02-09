@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { compose } from '../../../../../AppData/Local/Microsoft/TypeScript/3.6/node_modules/redux';
+import { compose } from 'redux';
 import { sendMessageCreater } from '../redux/dialogsPage-reducer';
 import { withAuthRedirect } from './../../hoc/withAuthRedirect';
 import Dialogs from './Dialogs';
