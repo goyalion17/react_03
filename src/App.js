@@ -47,7 +47,7 @@ componentWillUnmount() {
                 render={withSuspense(DialogsContainer)}/>
               <Route path='/profile' 
                 render={withSuspense(ProfileContainer)}/>
-              <Route path='/users' render={ () => <UsersContainer /> }/>
+              <Route path='/users' render={ () => <UsersContainer pageTitle={'Самураи'} /> }/>
               <Route path='/login' render={ () => <LoginPage /> }/>
               <Route path='*' render={ () => <div>404 NOT FOUND</div> }/>
             </Switch>

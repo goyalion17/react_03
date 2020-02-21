@@ -1,3 +1,6 @@
+
+import { getUsers } from './../components/redux/users-selectors';
+
 export type PostType = {
     id: number
     message: string
